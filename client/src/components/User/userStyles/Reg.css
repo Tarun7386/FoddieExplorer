@@ -37,10 +37,45 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+
 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #222;
+  color: #fff;
+}
+.name_reg{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #222;
+  color: #fff;
+
+}
+.email_reg{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #222;
+  color: #fff;
+}
+.mobile_reg{
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;

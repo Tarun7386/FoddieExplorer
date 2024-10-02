@@ -41,7 +41,7 @@ const SignUp = () => {
       <div className="signUpContainer">
         <form className="formcontainer" onSubmit={handleSignUp}>
           <h2 className="signuph2">Sign Up</h2>
-          <input
+          <input id="admin_input"
             type="text"
             placeholder="Username"
             value={username}

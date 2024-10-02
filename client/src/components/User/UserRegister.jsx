@@ -89,7 +89,7 @@ const UserRegister = () => {
         </label>
         <input
           type="text"
-          id="name"
+          className="name_reg"
           name="name"
           value={formData.name}
           onChange={handleChange}
@@ -102,7 +102,7 @@ const UserRegister = () => {
         </label>
         <input
           type="email"
-          id="email"
+          className="email_reg"
           name="email"
           value={formData.email}
           onChange={handleChange}
@@ -115,7 +115,7 @@ const UserRegister = () => {
         </label>
         <input
           type="tel"
-          id="mobile"
+          className="mobile_reg"
           name="mobile"
           pattern="[0-9]{10}"
           value={formData.mobile}

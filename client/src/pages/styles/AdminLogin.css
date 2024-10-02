@@ -34,7 +34,7 @@ h2 {
   
 }
 
-.i1, .i2 {
+.i1 {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -45,7 +45,17 @@ h2 {
   color: #fff;
   
 }
-
+.i2 {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #333;
+  color: #fff;
+  
+}
 .i1:focus, .i2:focus {
   border-color: #00aaff;
 }

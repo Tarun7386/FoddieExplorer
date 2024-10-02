@@ -43,7 +43,7 @@ const SignIn = () => {
         <div className="form-container">
         <form className="in_form" onSubmit={handleSignIn}>
         <h2>Sign In</h2>
-          <input 
+          <input className="use"
             type="text"
             placeholder="Username"
             value={username}
