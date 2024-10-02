@@ -50,7 +50,7 @@ const UserRegister = () => {
     if (validateForm()) {
       try {
         const response = await fetch(
-          "http://localhost:3000/registrations/user_register",
+          "https://foodie-explorer-deploy.vercel.app/registrations/user_register",
           {
             method: "POST",
             headers: {

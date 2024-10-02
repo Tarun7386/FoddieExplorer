@@ -11,7 +11,7 @@ const Explore = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:3000/admin/admin_details",
+        "https://foodie-explorer-deploy.vercel.app/admin/admin_details",
         {
           method: "POST",
           headers: {
