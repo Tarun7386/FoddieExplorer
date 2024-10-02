@@ -2,22 +2,22 @@
     "version": 2,
     "builds": [
       {
-        "src": "server/index.js",
+        "src": "client/package.json",
         "use": "@vercel/node"
       },
       {
-        "src": "client/dist/**",
-        "use": "@vercel/static"
+        "src": "server/index.js",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/favicon.ico",
-        "dest": "/client/dist/favicon.ico"
+        "src": "/(.*)",
+        "dest": "client/dist/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "/client/dist/$1"
+        "dest": "server/index.js"
       }
     ]
   }
