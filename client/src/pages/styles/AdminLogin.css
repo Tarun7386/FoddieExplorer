@@ -1,0 +1,70 @@
+/* AdminLogin.css */
+
+.asignInContainer {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.main-out{
+  border: 3px solid rgb(177, 125, 23);
+  
+  padding: 60px;
+  box-shadow:#ccc;
+  border-radius: 25pxpx;
+}
+.f {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+  
+  
+}
+
+.i1, .i2 {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #333;
+  color: #fff;
+  
+}
+
+.i1:focus, .i2:focus {
+  border-color: #00aaff;
+}
+
+.ebtn{
+  padding: 10px;
+  background-color: #0e0edf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #18b525;
+}
+
+button:focus {
+  outline: none;
+}
