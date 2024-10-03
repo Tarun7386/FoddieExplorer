@@ -97,12 +97,12 @@ const AddPlaces = () => {
               setRating(e.target.value);
             }
           }}
-          min="1"  // Minimum allowed value
+          min="0"  // Minimum allowed value
           max="5"  // Maximum allowed value
           step="1" // Step value for incrementing
         />
       </div>
-      <button className="btn" onClick={handleSubmit} type="button">
+      <button className="addplaces-btn" onClick={handleSubmit} type="button">
         Add Place
       </button>
     </div>
