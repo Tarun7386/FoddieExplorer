@@ -7,6 +7,10 @@ require('dotenv').config();
 
 const app = express();
 
+app.use(cors({
+  origin: 'https://cuisineexplorer.vercel.app',
+  methods: ['POST', 'GET']
+}));
 
 const adminRouter=require('./routes/admin');
 const userRouter=require('./routes/user');
@@ -31,7 +35,7 @@ mongoose.connect(process.env.MONGODB_URI , {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+
 app.get('/', (req, res) => {
   res.send('Welcome to the home page!');
 });
