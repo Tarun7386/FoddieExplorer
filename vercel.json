@@ -1,8 +1,13 @@
-
 {
+  "version": 2,
   "routes": [
-    { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
-    { "src": "/(.*)", "dest": "server/index.js" },
-    { "src": "/(.*)", "dest": "/index.html" } 
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server/index.js"
+    }
   ]
 }
