@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import './sheetcss1/AddPlaces.css'
+
 const AddPlaces = () => {
   const [image, setImage] = useState("");
   const [Place, setPlace] = useState("");
   const [FoodItem, setFoodItem] = useState("");
   const [Rating, setRating] = useState("");
- 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -15,6 +16,7 @@ const AddPlaces = () => {
       FoodItem,
       Rating,
     };
+    
     let missingFields = [];
     if (!image) missingFields.push("Image URL");
     if (!Place) missingFields.push("Place");
@@ -48,7 +50,6 @@ const AddPlaces = () => {
         alert("Submission failed: " + result.message);
       }
 
-     
       setImage("");
       setPlace("");
       setFoodItem("");
@@ -69,7 +70,7 @@ const AddPlaces = () => {
           onChange={(e) => setImage(e.target.value)}
         />
       </div>
-      <div  className="inner-card2">
+      <div className="inner-card2">
         <label>Place:</label>
         <input
           type="text"
@@ -77,7 +78,7 @@ const AddPlaces = () => {
           onChange={(e) => setPlace(e.target.value)}
         />
       </div>
-      <div  className="inner-card3">
+      <div className="inner-card3">
         <label>Food Item:</label>
         <input
           type="text"
@@ -85,15 +86,23 @@ const AddPlaces = () => {
           onChange={(e) => setFoodItem(e.target.value)}
         />
       </div>
-      <div  className="inner-card4">
+      <div className="inner-card4">
         <label>Rating:</label>
         <input
           type="number"
           value={Rating}
-          onChange={(e) => setRating(e.target.value)}
+          onChange={(e) => {
+            // Ensure the value stays between 1 and 5
+            if (e.target.value >= 1 && e.target.value <= 5) {
+              setRating(e.target.value);
+            }
+          }}
+          min="1"  // Minimum allowed value
+          max="5"  // Maximum allowed value
+          step="1" // Step value for incrementing
         />
       </div>
-      <button  className="btn" onClick={handleSubmit} type="button">
+      <button className="btn" onClick={handleSubmit} type="button">
         Add Place
       </button>
     </div>
