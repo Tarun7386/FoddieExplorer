@@ -7,10 +7,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({
-  origin: 'https://cuisineexplorer.vercel.app',
-  methods: ['POST', 'GET']
-}));
+app.use(cors());
 
 const adminRouter=require('./routes/admin');
 const userRouter=require('./routes/user');
