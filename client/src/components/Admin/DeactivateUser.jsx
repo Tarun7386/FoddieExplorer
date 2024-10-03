@@ -54,7 +54,7 @@ const DeactivateUser = () => {
           {users.map((user, index) => (
             <li key={user._id || index}>
               {user.username}
-              <button onClick={() => deactivateUser(user._id)}>
+              <button className="d_btn" onClick={() => deactivateUser(user._id)}>
                 Deactivate
               </button>
             </li>

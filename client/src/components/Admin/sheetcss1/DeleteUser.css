@@ -44,10 +44,11 @@
 }
 
 
-.d_ul button {
+.d_btn {
     background-color: #dc3545; 
     color: #fff;
     border: none;
+    width:100px;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
