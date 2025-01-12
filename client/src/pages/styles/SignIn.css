@@ -101,3 +101,45 @@ h2 {
 .in_form button:hover {
     background-color: #0056b3;
 }
+@media screen and (max-width: 600px) {
+    .signInContainer {
+        position: relative; /* Remove absolute positioning */
+        top: auto;
+        left: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 30px;
+        max-width: 100%; /* Ensure the form takes full width on smaller screens */
+    }
+
+    .map {
+        height: 400px; /* Reduce map height for mobile */
+        width: 100%;
+    }
+
+    /* Ensure image fits the container */
+    .map img {
+        width: 100%; /* Ensure the image takes full width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the container without distortion */
+    }
+
+    .in_form input {
+        padding: 12px; /* Slightly reduce input padding */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .in_form button {
+        padding: 12px;
+        font-size: 0.9rem; /* Adjust button size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce heading size on mobile */
+    }
+}

@@ -98,4 +98,38 @@
         height: 100%;
         width: 100%;
       }
+
+      @media screen and (max-width: 600px) {
+        header {
+            flex-direction: column; /* Stack header items vertically */
+            align-items: flex-start; /* Align items to the start */
+            padding: 10px; /* Adjust padding */
+        }
+    
+        .Topbar ul {
+            flex-direction: column; /* Stack nav items vertically */
+            margin-left: 0; /* Remove margin for smaller screens */
+            margin-top: 10px; /* Adjust top margin */
+            gap: 20px; /* Adjust spacing between items */
+        }
+    
+        .Topbar li {
+            justify-content: center; /* Center align list items */
+        }
+    
+        img {
+            height: 80px; /* Smaller logo size for mobile */
+            width: auto; /* Maintain aspect ratio */
+        }
+    
+        .logo {
+            height: 100px; /* Smaller logo size */
+            width: 100px; /* Smaller logo size */
+        }
+    
+        .logo-img {
+            height: 70px; /* Smaller image size */
+            width: 70px; /* Smaller image size */
+        }
+    }
       

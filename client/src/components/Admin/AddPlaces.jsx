@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import './sheetcss1/AddPlaces.css'
 
 const AddPlaces = () => {

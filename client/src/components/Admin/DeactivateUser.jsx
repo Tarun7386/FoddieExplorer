@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import './sheetcss1/DeleteUser.css'
 const DeactivateUser = () => {
   const [users, setUsers] = useState([]);

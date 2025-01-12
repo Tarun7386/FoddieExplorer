@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./userStyles/Reg.css"
 const UserRegister = () => {
   const [formData, setFormData] = useState({

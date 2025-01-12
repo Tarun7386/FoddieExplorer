@@ -18,8 +18,7 @@ const sendMessageRouter=require('./routes/message')
 
 
 
-// "mongodb://localhost:27017/foodie_explorer" 
-// mongodb://127.0.0.1:27020,127.0.0.1:27021,127.0.0.1:27022/cbitit1?replicaSet=m101';
+
 mongoose.connect(process.env.MONGODB_URI , {
   })
     .then(() => {
