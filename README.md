@@ -5,21 +5,22 @@ A full-stack web application that helps food enthusiasts discover and explore cu
 
 ## 📸 Screenshots
 
-### Home Page
-![Home Page](./screenshots/home-page.png)
-*The landing page with navigation and food exploration theme*
-
-### User Dashboard
-![User Dashboard](./screenshots/user-dashboard.png)
-*User interface with sidebar navigation and search functionality*
-
-### Admin Panel
-![Admin Panel](./screenshots/admin-panel.png)
+### Admin Page
+![Admin Page](./screenshots/admin2.png)
 *Admin dashboard for managing places, users, and content*
 
+### User Dashboard
+![User Dashboard](./screenshots/user.png)
+*User interface with sidebar navigation*
+
 ### Search Results
-![Search Results](./screenshots/search-results.png)
-*Search functionality displaying food items and locations*
+![Search Results](./screenshots/searchbar1.png)
+*Search functionality displaying locations*
+
+
+![Search Results](./screenshots/searchbar2.png)
+*Search functionality displaying food items* 
+
 
 ## ✨ Features
 
@@ -195,102 +196,6 @@ foodie-explorer/
 └── README.md
 ```
 
-## 🎨 UI/UX Improvements Suggestions
-
-### Current Design Analysis
-Your application has a solid foundation, but here are some recommendations to enhance the user experience:
-
-### 🎯 Immediate Improvements
-
-1. **Color Scheme Consistency**
-   - Implement a consistent color palette across all components
-   - Consider using CSS custom properties (variables) for better maintainability
-
-2. **Typography Enhancement**
-   - Use a modern font stack (Google Fonts like Inter, Roboto, or Poppins)
-   - Establish consistent font sizes and weights hierarchy
-
-3. **Spacing & Layout**
-   - Implement consistent spacing using a scale (8px, 16px, 24px, 32px)
-   - Use CSS Grid and Flexbox more effectively for layouts
-
-4. **Interactive Elements**
-   - Add hover states and transitions to buttons and links
-   - Implement loading states for async operations
-   - Add form validation feedback with better visual cues
-
-### 🔧 Component-Specific Enhancements
-
-#### Search Bar
-```css
-/* Improved search bar styling */
-.search-container {
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.search-input {
-  flex: 1;
-  padding: 16px 24px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-.search-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  padding: 16px 32px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-```
-
-#### Cards Design
-```css
-/* Modern card styling */
-.food-card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.food-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-}
-
-.food-card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.food-card-content {
-  padding: 20px;
-}
-```
-
-### 📱 Mobile Responsiveness
-- Implement proper breakpoints for tablet and mobile devices
-- Ensure touch-friendly button sizes (minimum 44px)
-- Optimize navigation for mobile (hamburger menu)
-
-### 🎭 Visual Enhancements
-- Add subtle animations and micro-interactions
-- Implement a proper loading skeleton for data fetching
-- Use better placeholder images or implement lazy loading
-- Add success/error toast notifications
-
 ## 🔌 API Endpoints
 
 ### Authentication
@@ -323,26 +228,14 @@ Your application has a solid foundation, but here are some recommendations to en
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Developer
 
 **N Tarun**
-- Email: tarun@gmail.com
+- Email: nellikudurutarun1234@gmail.com
 - GitHub: [@Tarun7386](https://github.com/Tarun7386/)
 - LinkedIn: [Tarun Nellikuduru](https://www.linkedin.com/in/tarun-nellikuduru-434214272/)
 - Location: Hyderabad, Telangana
 
-## 🙏 Acknowledgments
-
-- Food images and inspiration from various culinary sources
-- Icons provided by Font Awesome
-- MongoDB for database solutions
-- React community for excellent documentation and support
-
----
 
 <div align="center">
   <p>Made with ❤️ for food lovers everywhere</p>
